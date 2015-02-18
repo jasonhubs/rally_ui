@@ -1,0 +1,101 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="Rally Dashboard UI">
+    	<meta name="author" content="Saro Chandra Bhooshan">
+    	
+    	<!--  Change your icon accordingly -->
+    	<link rel="icon" href="{% static "rally_dashboard/lib_rally_dashboard/img/brand_icon.jpg" %}"/>
+    	 <!-- -->
+    	<title>Rally Dashboard</title>
+    	<link type= "text/css" rel= "stylesheet" href= "{% static "rally_dashboard/bootstrap-3.2.0-dist/css/bootstrap.css" %}"/>
+    	<link type= "text/css" rel= "stylesheet" href= "{% static "rally_dashboard/bootstrap-3.2.0-dist/css/bootstrap.min.css" %}"/>
+    	<link type= "text/css" rel= "stylesheet" href= "{% static "rally_dashboard/lib_rally_dashboard/css/rally_dashboard.css" %}"/>
+    	
+	</head>
+
+	<body>
+		<div class="container" id="topNavContainer">
+			<div class="navbar navbar-default navbar-fixed-top">
+				<div class="container" id="navContainer">
+					<a class="navbar-brand" href="/"><img src= "{% static "rally_dashboard/lib_rally_dashboard/img/brand_icon.jpg" %}"></a>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav" id="leftNavigation">
+							<li class="active"><a href="#">Rally</a></li>
+							<li><a href="#">Test Matrix</a></li>
+							<li><a href="#">Docs</a></li>
+						</ul><!-- end nav navbar-nav -->
+        				<ul class="nav navbar-nav pull-right" id="rightNavigation">
+        					<li><a class="btn btn-success btn-sm" href="">Sign In</a>
+        					</li><li><a class="btn btn-info btn-sm" href="">Register</a>
+        					</li>
+        				</ul><!-- end nav navbar-nav pull-right -->
+					</div><!-- end navbar-collpase collapse navbar-responsive-collapse  -->
+				</div><!-- end navContainer -->
+			</div><!-- end navbar navbar-default navbar-fixed-top -->			
+		</div><!-- end topNavContainer-->
+		
+		<!--Vertical Navbar -->
+		<div class="container" id="cantainerCarouselVerticalNavbar">
+			<div class="row" id="rowContainer">
+				<div class="col-sm-3" id="moreInfo">
+					<h3>Rally Jobs</h3>
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">SCENARIO</a></li>
+							<li><a href="#tab2" data-toggle="tab">CUSTOM</a></li>
+						</ul><!--end nav nav-tabs  -->
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<h5> <a href="#"><b>&nbsp;&nbsp;Nova</b></a></h5>
+								<h5> <a href="#"><b>&nbsp;&nbsp;Neutron</b></a></h5>
+								<h5> <a href="#"><b>&nbsp;&nbsp;Swift</b></a></h5>
+								<h5> <a href="#"><b>&nbsp;&nbsp;Glance</b></a></h5>
+							</div><!-- end tab-pane -->
+							<div class="tab-pane" id="tab2">
+								<h5> <a href="#"><b>&nbsp;&nbsp;Nova-ESX</b></a></h5>
+								<h5> <a href="#"><b>&nbsp;&nbsp;Neutron-OVSvAPP</b></a></h5>
+								<h5> <a href="#"><b>&nbsp;&nbsp;Neutron-l2Gateway</b></a></h5>
+								<h5> <a href="#"><b>&nbsp;&nbsp;Neutron-Scale</b></a></h5>
+							</div>
+						</div><!-- end tab-content -->
+					</div><!-- end tababble -->
+				</div><!-- end moreInfo -->
+			</div><!-- end rowContainer -->
+		</div><!-- end cantainerVerticalNavbar -->
+		
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<h6>Copyright &copy; 2014 Hewlett Packard. All rights reserved. </h6>
+					</div><!-- end col-sm-3 -->
+					<div class="col-sm-2">
+						<h6>About Us </h6>
+						<ul class="unstyled">
+							<li><a href="#">People</a></li>
+						</ul>
+					</div><!-- end col-sm-3 -->
+					<div class="col-sm-3">
+						<h6>Powered by </h6>
+						<ul class="unstyled">
+							<li><a href="#">Django</a></li>
+						</ul>
+					</div><!-- end col-sm-3 -->
+				</div> <!-- end row -->
+			</div><!-- end container-fluid -->
+		</footer>
+		<!-- Java script libraries -->
+		<script type="text/javascript" src= "{% static "rally_dashboard/jquery/jquery-2.1.1.min.js" %}"></script>
+		<script type="text/javascript" src= "{% static "rally_dashboard/bootstrap-3.2.0-dist/js/bootstrap.min.js" %}"></script>
+	</body>
+
+</html>

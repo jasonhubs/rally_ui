@@ -1,0 +1,101 @@
+body { 
+	padding-top: 80px; 
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizedlegibility;
+}
+
+/*  ----------------------
+    navbar
+    ----------------------- */
+
+.navbar-brand {
+	float: left;
+	height: 75px;
+	padding: 10px 10px;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+#leftNavigation	 {
+	margin-top: 15px;
+	margin-bottom: 0px;
+	margin-left: 26px;
+}
+
+#rightNavigation {
+	margin-top: -10px;
+	margin-bottom: 0px;
+}
+
+
+
+/*   -------------------
+     Typography
+     ------------------- */
+     
+.well .page-header {
+	margin-top: 0;  
+	margin-bottom: 0;  
+}
+
+.well .page-header h1 {
+	margin-top: 0;
+}
+
+.well p {
+	font-size: 16px;
+}
+
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}
+
+
+ul.socialMedia {
+	list-style: none;
+	display: inline-flex;
+	padding: 0px;
+}
+
+ul.socialMedia li {
+	margin: 5px;
+}
+
+.caption h3 {
+	font-size: 18px;
+}
+/* ---------------------
+   Global Style
+   --------------------- */
+   
+.well {
+	margin-top: 10px;	
+}
+
+.thumbnail img {
+	margin: 5px;
+}
+/* ---------------------------
+   tab-content
+   --------------------------- */
+   
+   
+ /* ---------------------------
+    Footer
+    --------------------------- */
+    
+ footer {
+
+    position : absolute;
+    bottom : 0;
+    height : 80px;
+    margin-top : 40px;
+    background: #333;
+    color: #eee;
+    width:100%;
+ 
+ }  
+   
+ 
+  
