@@ -8,3 +8,4 @@ psycopg2==2.6
 static3==0.5.1
 whitenoise==1.0.6
 wsgiref==0.1.2
+django-postgrespool==0.3.0
